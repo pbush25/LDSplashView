@@ -2,7 +2,7 @@
 //  LDSplashView.swift
 //  LDSplashView
 //
-//  Created by Patrick M. Bush on 10/22/15.
+//  Created by Patrick M. Bush on 10/22/15
 //  Copyright © 2015 Lead Development Co. All rights reserved.
 //
 
