@@ -7,14 +7,14 @@ The splash view will allow you to create splash views with one of several pre-bu
 
 NOTE: The Objective-C version of this code can be found here: https://github.com/sachinkesiraju/SKSplashView, with a huge thanks to sachinkesiraju for the original. This is simply a Swift port of his code. 
 
-LDSplashView
+**LDSplashView**
 
- Installation
+**Installation**
 
 Just download the zip file, drag the LDSPlashView.swift file into your project, import `LDSPlashView` in the view you're working in and you're good to go. 
 
- Implementation
- LDSplashView
+**Implementation**
+ 
 
     let splashView = LDSplashView(initWithBackgroundImage image: UIImage) //The SplashView can be initialized with a variety of animation types and backgrounds. See customizability for more.
 
@@ -54,11 +54,11 @@ The Splash view also allows you to customize the animation transition of the spl
     .Custom
     
     
- SKSplashIcon
+**SKSplashIcon**
 
 In addition to adding an animated splash view, you can also add an icon on your splash view with its own customizability options that will animate as long as the splash view is running. To add a splash icon to your splash view:
 
-Initialize the splash view as follows:
+Initialize the splash icon as follows:
 
     let splashIcon = LDSplashIcon(initWithImage: iconImage, animationType: LDIconSplashAnimationType)
     //Initialize with the customizability option of your choice. See Customizability for more.
@@ -84,7 +84,8 @@ The animation of the splash icon can also be customized with the following anima
     .None
     .Custom
 
- Delegate
+**Delegate**
+
 You can optionally add the SplashView delegate to your view controller to listen to when the splash view begins and ends animating. To do this:
 
 Add `LDSplashDelegate` to your interface
@@ -100,14 +101,16 @@ Add the following methods to listen to updates
     }
     
 
-Example
+**Example**
+
 Some examples of splash views created using LDSplashView (Twitter iOS app and Ping iOS app). All code to the examples is available in the Demo. If you found a way to mimick another popular iOS app's splash view using SKSplashView, let me know so I can add it here.
 
 
- Community
-If you feel you can improve or add more customizability to LDSplashView, feel free to raise an issue/submit a PR.
+**Community**
 
+If you feel you can improve or add more customizability to LDSplashView, feel free to raise an issue/submit a PR.
 For any questions, reach out to me on Twitter @pbush25
 
- License
+**License**
+
 LDSplashView is available under the MIT License. See the LICENSE for more info.
