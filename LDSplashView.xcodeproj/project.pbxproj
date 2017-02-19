@@ -53,7 +53,7 @@
 		8F23F6DA1BD95293004D864D /* LDSplashViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDSplashViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F23F6DE1BD95293004D864D /* LDSplashViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDSplashViewUITests.swift; sourceTree = "<group>"; };
 		8F23F6E01BD95293004D864D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F23F6EC1BD952D1004D864D /* LDSplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSplashView.swift; sourceTree = SOURCE_ROOT; };
+		8F23F6EC1BD952D1004D864D /* LDSplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSplashView.swift; sourceTree = "<group>"; };
 		8F23F7011BD9A6B9004D864D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F23F7031BD9AAEA004D864D /* white dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white dot.png"; sourceTree = "<group>"; };
 		8F23F7041BD9AAEA004D864D /* ping background.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping background.PNG"; sourceTree = "<group>"; };
@@ -112,13 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				8F23F70F1BDAA310004D864D /* Images */,
-				8F23F6EC1BD952D1004D864D /* LDSplashView.swift */,
 				8F23F6BE1BD95293004D864D /* AppDelegate.swift */,
+				8F23F6C51BD95293004D864D /* Assets.xcassets */,
+				8F23F6CA1BD95293004D864D /* Info.plist */,
+				8F23F6EC1BD952D1004D864D /* LDSplashView.swift */,
+				8F23F6C71BD95293004D864D /* LaunchScreen.storyboard */,
 				8F23F6C21BD95293004D864D /* Main.storyboard */,
 				8F23F7011BD9A6B9004D864D /* ViewController.swift */,
-				8F23F6C51BD95293004D864D /* Assets.xcassets */,
-				8F23F6C71BD95293004D864D /* LaunchScreen.storyboard */,
-				8F23F6CA1BD95293004D864D /* Info.plist */,
 			);
 			path = LDSplashView;
 			sourceTree = "<group>";
@@ -126,8 +126,8 @@
 		8F23F6D21BD95293004D864D /* LDSplashViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F23F6D31BD95293004D864D /* LDSplashViewTests.swift */,
 				8F23F6D51BD95293004D864D /* Info.plist */,
+				8F23F6D31BD95293004D864D /* LDSplashViewTests.swift */,
 			);
 			path = LDSplashViewTests;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 		8F23F6DD1BD95293004D864D /* LDSplashViewUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8F23F6DE1BD95293004D864D /* LDSplashViewUITests.swift */,
 				8F23F6E01BD95293004D864D /* Info.plist */,
+				8F23F6DE1BD95293004D864D /* LDSplashViewUITests.swift */,
 			);
 			path = LDSplashViewUITests;
 			sourceTree = "<group>";
@@ -144,14 +144,15 @@
 		8F23F70F1BDAA310004D864D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8F23F7031BD9AAEA004D864D /* white dot.png */,
 				8F23F7041BD9AAEA004D864D /* ping background.PNG */,
 				8F23F7051BD9AAEA004D864D /* ping.png */,
 				8F23F7061BD9AAEA004D864D /* snapchat icon.png */,
 				8F23F7071BD9AAEA004D864D /* twitter background.png */,
 				8F23F7081BD9AAEA004D864D /* twitterIcon.png */,
+				8F23F7031BD9AAEA004D864D /* white dot.png */,
 			);
 			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +336,7 @@
 				8F23F6C31BD95293004D864D /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		8F23F6C71BD95293004D864D /* LaunchScreen.storyboard */ = {
@@ -343,6 +345,7 @@
 				8F23F6C81BD95293004D864D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -437,6 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LeadDevelopmentCompany.LDSplashView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -448,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LeadDevelopmentCompany.LDSplashView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -518,6 +523,7 @@
 				8F23F6E51BD95293004D864D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F23F6E61BD95293004D864D /* Build configuration list for PBXNativeTarget "LDSplashViewTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +532,7 @@
 				8F23F6E81BD95293004D864D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F23F6E91BD95293004D864D /* Build configuration list for PBXNativeTarget "LDSplashViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +541,7 @@
 				8F23F6EB1BD95293004D864D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
