@@ -166,7 +166,7 @@ import UIKit
     
     func addBounceAnimation() {
         let bounceDuration = self.animationDuration * 0.8
-        NSTimer.scheduledTimerWithTimeInterval(Double(bounceDuration), target: self, selector: "pingGrowAnimation", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(Double(bounceDuration), target: self, selector: #selector(LDSplashView.pingGrowAnimation), userInfo: nil, repeats: false)
     }
     
     func pingGrowAnimation() {
@@ -225,12 +225,12 @@ import UIKit
     }
     
     func addNoAnimation() {
-        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: "removeSplashView", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: #selector(LDSplashView.removeSplashView), userInfo: nil, repeats: true)
     }
     
     func addCustomAnimationWithAnimation(animation: CAAnimation) {
         self.layer.addAnimation(animation, forKey: "LDSplashAnimation")
-        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: "removeSplashView", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: #selector(LDSplashView.removeSplashView), userInfo: nil, repeats: true)
     }
     
     func removeSplashView() {
@@ -311,7 +311,7 @@ import UIKit
     
     //MARK: - Implementation
     func addObserverForAnimationNotification() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "receiveNotification:", name: "startAnimation", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LDSplashIcon.receiveNotification(_:)), name: "startAnimation", object: nil)
     }
     
     func receiveNotification(notification: NSNotification) {
@@ -405,7 +405,7 @@ import UIKit
     }
     
     func addPingAnimation() {
-        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: "removeAnimations", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: #selector(LDSplashIcon.removeAnimations), userInfo: nil, repeats: true)
         UIView.animateWithDuration(1.5, delay: 0, options: .Repeat, animations: { () -> Void in
             let scaleTransform = CGAffineTransformMakeScale(0.75, 0.75)
             self.transform = scaleTransform
@@ -419,7 +419,7 @@ import UIKit
     
     func addBlinkAnimation() {
         self.alpha = 0
-        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: "removeAnimations", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: #selector(LDSplashIcon.removeAnimations), userInfo: nil, repeats: true)
         UIView.animateWithDuration(1.5, delay: 0, options: .Repeat, animations: { () -> Void in
             self.alpha = 1
             }) { (_) -> Void in
@@ -436,12 +436,12 @@ import UIKit
     }
     
     func addNoAnimation() {
-        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: "removeAnimations", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: #selector(LDSplashIcon.removeAnimations), userInfo: nil, repeats: true)
     }
     
     func addCustomAnimation(animation: CAAnimation) {
         self.layer.addAnimation(animation, forKey: "LDSplashAnimation")
-        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: "removeAnimations", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(Double(self.animationDuration), target: self, selector: #selector(LDSplashIcon.removeAnimations), userInfo: nil, repeats: true)
     }
 }
 
